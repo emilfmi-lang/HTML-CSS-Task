@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Developer CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Montserrat', sans-serif; }
+        body { background:#f4f4f9; color:#333; line-height:1.6; }
+        a { text-decoration:none; color:inherit; }
+
+        /* CV Container */
+        .cv-container {
+            max-width: 900px;
+            background:#fff;
+            margin:50px auto;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        .cv-header {
+            text-align:center;
+            margin-bottom:30px;
+        }
+        .cv-header h1 { font-size:2.5rem; color:#ff6b6b; }
+        .cv-header p { font-size:1.1rem; color:#555; margin-top:5px; }
+
+        /* Contact Info */
+        .contact-info {
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            margin-bottom:30px;
+            flex-wrap:wrap;
+            font-weight:600;
+            color:#333;
+        }
+
+        /* Section Titles */
+        h2 {
+            color:#ff6b6b;
+            margin-bottom:15px;
+            font-size:1.8rem;
+            border-bottom:2px solid #ff6b6b;
+            display:inline-block;
+            padding-bottom:5px;
+        }
+
+        section { margin-bottom:30px; }
+
+        /* Skills List */
+        .skills-list, .projects-list, .experience-list {
+            list-style:none;
+            padding-left:0;
+        }
+        .skills-list li, .projects-list li, .experience-list li {
+            margin-bottom:10px;
+        }
+
+        /* Two Columns Layout */
+        .two-columns { display:flex; gap:20px; flex-wrap:wrap; }
+        .column { flex:1; min-width:250px; }
+
+        /* Footer */
+        footer {
+            text-align:center;
+            font-size:0.9rem;
+            color:#888;
+            margin-top:40px;
+        }
+
+        /* Responsive */
+        @media(max-width:768px){
+            .two-columns { flex-direction:column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <div class="cv-header">
+            <h1>Ad Soyad</h1>
+            <p>Backend Developer</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <span>📞 +994 XX XXX XX XX</span>
+            <span>✉ example@example.com</span>
+            <span>💻 github.com/sizinadiniz</span>
+            <span>🔗 linkedin.com/in/sizinadiniz</span>
+        </div>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>Qısa Profil</h2>
+            <p>Təcrübəli backend developer, Node.js, Python/Django və RESTful API ilə işləməkdə ustadır. Yüksək performanslı və miqyaslana bilən sistemlər qurmaq, verilənlər bazasını optimallaşdırmaq və təhlükəsiz arxitektura yaratmaq bacarığına malikdir.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Texniki Bacarıqlar</h2>
+            <div class="two-columns">
+                <div class="column">
+                    <ul class="skills-list">
+                        <li>Proqramlaşdırma dilləri: Node.js, Python, Java</li>
+                        <li>Veb Framework-lər: Express.js, Django, Flask</li>
+                        <li>Verilənlər Bazası: MySQL, PostgreSQL, MongoDB</li>
+                        <li>API: REST, GraphQL</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="skills-list">
+                        <li>DevOps / Digər: Docker, Git, AWS, Redis</li>
+                        <li>Təhlükəsizlik: JWT, OAuth2, SSL/TLS</li>
+                        <li>Testlər: Unit test, Integration test</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>İş Təcrübəsi</h2>
+            <ul class="experience-list">
+                <li>
+                    <strong>Backend Developer | Şirkət Adı, Bakı</strong> (2021 – indiyədək)<br>
+                    RESTful API-ləri dizayn edib frontend komandası ilə inteqrasiya etmişəm. Verilənlər bazasını optimallaşdıraraq performansı %30 artırmışam. Docker və AWS ilə mikroservis arxitekturası qurmuşam.
+                </li>
+                <li>
+                    <strong>Junior Backend Developer | Başqa Şirkət, Bakı</strong> (2019 – 2021)<br>
+                    Django / Flask ilə veb xidmətləri yaratmışam. Verilənlər bazası modellərini dizayn etmişəm və testlərlə təmin etmişəm.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Təhsil</h2>
+            <p><strong>Bakalavr, Kompüter Elmləri</strong>, XYZ Universiteti, Bakı (2015 – 2019)</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Layihələr</h2>
+            <ul class="projects-list">
+                <li>
+                    <strong>Layihə Adı / API Platforması</strong><br>
+                    Node.js + Express ilə REST API, Docker və PostgreSQL ilə miqyaslana bilən arxitektura.
+                </li>
+                <li>
+                    <strong>Layihə Adı / Django Veb Tətbiqi</strong><br>
+                    Django ilə admin panel və backend sistemi, istifadəçi autentifikasiyası və rol sistemi.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates">
+            <h2>Sertifikatlar</h2>
+            <ul>
+                <li>Django / Python üzrə onlayn sertifikat</li>
+                <li>AWS Certified Developer – Associate</li>
+                <li>Docker / Kubernetes kursu</li>
+            </ul>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages">
+            <h2>Dil Bilikləri</h2>
+            <ul>
+                <li>Azərbaycan: Ana dili</li>
+                <li>İngilis: Yüksək səviyyə</li>
+                <li>Rus: Orta səviyyə</li>
+            </ul>
+        </section>
+
+        <!-- Other Skills -->
+        <section id="others">
+            <h2>Digər Bacarıqlar</h2>
+            <ul>
+                <li>Komanda işi və Agile metodologiyaları</li>
+                <li>Analitik düşüncə və problem həll etmə</li>
+                <li>Vaxtın idarə edilməsi və prioritetləşdirmə</li>
+                <li>Açıq mənbə töhfələri</li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 Ad Soyad. Bütün hüquqlar qorunur.
+        </footer>
+    </div>
+</body>
+</html>
