@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Məhsullar</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Trendyol Məhsulları</h1>
+        <div class="cart-icon" onclick="goToCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="products">
+            <div class="product">
+                <img src="/images (1).jpeg" alt="Product 1">
+                <h3>Məhsul 1</h3>
+                <p>Qiymət: 50₼</p>
+                <button onclick="addToCart('Məhsul 1', 50)">Səbətə əlavə et</button>
+            </div>
+
+            <div class="product">
+                <img src="/images (2).jpeg" alt="Product 2">
+                <h3>Məhsul 2</h3>
+                <p>Qiymət: 70₼</p>
+                <button onclick="addToCart('Məhsul 2', 70)">Səbətə əlavə et</button>
+            </div>
+
+            <div class="product">
+                <img src="/images.jpeg" alt="Product 3">
+                <h3>Məhsul 3</h3>
+                <p>Qiymət: 90₼</p>
+                <button onclick="addToCart('Məhsul 3', 90)">Səbətə əlavə et</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>
